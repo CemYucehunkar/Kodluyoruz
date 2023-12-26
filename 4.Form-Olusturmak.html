@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar ve Veri Kaydetme</title>
+</head>
+<body>
+    <form action="">
+        Ad:         <input type="text" placeholder="Kullanıcı Adı"> <br> <!-- Direk bir metin girdisi alacaksak text type olacak-->
+       
+        Soyad:      <input type="text" placeholder="Kullanıcı Adı"> <br><!-- PLACEHOLDER  input içinde oraya ne geleceğini yazan silik yazı-->
+        
+        Şifre:      <input type="password" required> <!-- pasword gireceğimiz zaman bu şekilde yapıyoruz-->
+        E-Posta:    <input type="email" required> <br> <!-- mail adresi alacaksak MAİL TYPE olacak.  Required burası zorunlu demek-->
+        
+        Doğum Tarihi: <input type="date"> <br><!-- bir tarih alacaksak DATE TYPE-->
+        
+        Cinsiyet <br>
+        <input type="radio" name="Cinsiyet">  Kadın <br> <!-- Tek seçim istiyorsak RADİO olacak. veee-->
+        <input type="radio" name="Cinsiyet"> Erkek <br> <!-- hangisinin istenilen olduğunu belirtmek için name= diyip Ana başlığa atıyoruz-->
+        <input type="radio" name="Cinsiyet"> Belirtmek İstemiyorum <br> <!-- name="Cinsiyet" seçileni cinsiyete ata demek-->
+
+        Favori Takımınız: <br>
+        <input type="checkbox"> Fenerbahçe <br> <!-- chekbox birden çok seçim için kullanılacaktır-->
+        <input type="checkbox"> Beşiktaş <br> 
+        <input type="checkbox"> Hatayspor <br>
+       
+        <input type="file" > <!-- Dosya seçmek için kullanılır FİLE TYPE-->
+        <br>
+        
+        <textarea name="mesajinputu" id="mesajAlani" cols="30" rows="10"></textarea> <br>
+        <!-- Bu şekilde bir bir mesaj arenası yani alanı açabiliriz. 30 sütundan 10 satırdan oluşan-->
+
+
+        <h2>İÇECEKLER</h2>  <!-- bir liste içinden seçmek için de bu kullanılır-->
+        <select > <!-- multiple , outofocus vb  atributeler select içine gelebilir.-->
+            <option value="Çay"> Çay</option>
+            <option value="Kahve"> Kahve</option>
+            <option value="Limonata"> Limonata</option>
+        </select>
+        <br> <br> <br>
+
+        <input type="submit" value="Üye Ol!">  <!-- submit verileri kaydedilmesi için gödermeye yarar-->
+        <input type="reset" value="Hepsini Sil!"> <!--reset ise hepsini silmeye-->
+
+        <!-- value ise yeniden isimlendirmek için kullanılır-->
+    </form>
+
+
+    <!-- TÜM BU YAPILARIN FARKLI KULLANIMLARI MEVCUT BUNLARI W3SCHOOL DAN ARATIP BULABİLİRSİN-->
+</body>
+</html>
